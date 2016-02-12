@@ -17,6 +17,33 @@
     80% { transform: translateX(0%) skewX(-15deg); opacity: 1; }
     100% { transform: translateX(0%) skewX(0deg); opacity: 1; }
 }
+.floating{
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+
 .animated {
    -webkit-animation-duration: 1s;
    animation-duration: 1s;
@@ -86,7 +113,24 @@ body {
   left: 1115px;
   top: 100px;
 }
-
+.thinkBubble {
+  position: absolute;
+  left: 145px;
+}
+.thinkBubbleSentence {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-size: 20px;
+  position: absolute;
+  top: 75px;
+  left: 170px;
+}
+/*.thinkBubble:hover:after {
+  font-family: 'Fontdiner Swanky', cursive;
+  content: "Let's play fetch!";
+}*/
+h4 {
+  border-bottom: 2px dotted black;
+}
 .bubbleContent {
   float: left;
   position: absolute;
