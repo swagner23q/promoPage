@@ -13,7 +13,7 @@ https://fortawesome.github.io/Font-Awesome/icons/
 
 The program used to create this project is ***Atom, Git, and Terminal***.
 
-To setup locally, git clone~ https://github.com/swagner23q/pastaPage
+To setup locally, git clone~ https://github.com/swagner23q/promoPage
 To view the website, go here:
 
 &copy; 2016
