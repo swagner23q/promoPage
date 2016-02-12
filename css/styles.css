@@ -274,11 +274,50 @@ input:focus, textarea:focus {
 }
 .socialMedia {
   position: absolute;
-  top: 10px;
+  top: 13px;
   left: 1100px;
 }
 #faInsta, #faPin, #faYou, #faTwit, #faFace {
-  color: #848383;
+  color: #46494A;
   font-size: 27px;
   padding-right: 15px;
+}
+#faInsta:hover, #faPin:hover, #faYou:hover, #faTwit:hover, #faFace:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px 5px black;
+}
+#faInsta:active, #faPin:active, #faYou:active, #faTwit:active, #faFace:active {
+  text-shadow: none;
+}
+
+#faInsta:hover:after, #faPin:hover:after, #faYou:hover:after, #faTwit:hover:after, #faFace:hover:after {
+  position: absolute;
+  color: white;
+  border: 2px solid #D1D1CD;
+  background-color: #46494A;
+  padding: 3px;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: 28px;
+}
+
+#faInsta:hover:after {
+  content: "Instagram";
+  left: -22px;
+}
+#faPin:hover:after {
+  content: "Pinterest";
+  left: 25px;
+}
+#faYou:hover:after {
+  content: "YouTube";
+  left: 65px;
+}
+#faTwit:hover:after {
+  content: "Twitter";
+  left: 110px;
+}
+#faFace:hover:after {
+  content: "Facebook";
+  left: 145px;
 }
