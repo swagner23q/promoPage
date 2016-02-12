@@ -5,17 +5,117 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
-.overLord {
+@-webkit-keyframes lightSpeedIn {
+   0% { -webkit-transform: translateX(100%) skewX(-30deg); opacity: 0; }
+    60% { -webkit-transform: translateX(-20%) skewX(30deg); opacity: 1; }
+    80% { -webkit-transform: translateX(0%) skewX(-15deg); opacity: 1; }
+    100% { -webkit-transform: translateX(0%) skewX(0deg); opacity: 1; }
+}
+@keyframes lightSpeedIn {
+    0% { transform: translateX(100%) skewX(-30deg); opacity: 0; }
+    60% { transform: translateX(-20%) skewX(30deg); opacity: 1; }
+    80% { transform: translateX(0%) skewX(-15deg); opacity: 1; }
+    100% { transform: translateX(0%) skewX(0deg); opacity: 1; }
+}
+.animated {
+   -webkit-animation-duration: 1s;
+   animation-duration: 1s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+}
+.lightSpeedIn {
+    -webkit-animation-name: lightSpeedIn;
+    animation-name: lightSpeedIn;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+.animated.lightSpeedIn {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+body {
   background-image: url("../img/ifetchBackground.jpeg");
   background-repeat: no-repeat;
+  background-color: #E7E8EA;
   position: relative;
   width: 100%;
   height: 953px;
-  font-family: Arial;
+  font-family: 'Puritan', sans-serif;
 }
 .videoPromo {
   box-shadow: 3px 3px 18px black;
   position: absolute;
   top: 150px;
   left: 850px;
+}
+.videoPromo:hover + .promoSentence {
+  display: block;
+}
+.promoSentence {
+  font-style: italic;
+  position: absolute;
+  text-shadow: 1px 1px 3px black;
+  top: 390px;
+  left: 925px;
+  display: none;
+}
+.firstSentence {
+  font-weight: bold;
+  position: absolute;
+  top: 435px;
+  left: 940px;
+  text-align: right;
+}
+.secondSentence {
+  font-weight: bold;
+  position: absolute;
+  top: 465px;
+  left: 977px;
+  text-align: center;
+}
+
+.firstPlace {
+  position: absolute;
+  left: 960px;
+  top: 15px;
+  border-radius: 60px;
+}
+.blueRibbon {
+  position: absolute;
+  left: 1115px;
+  top: 100px;
+}
+
+.bubbleContent {
+  float: left;
+  position: absolute;
+  text-align: center;
+  top: 600px;
+  left: 150px;
+	margin:10px;
+	padding:0;
+	width: 500px;
+	height: 300px;
+	border:1px solid rgba(0,0,0,0.5);
+	border-radius:10px 10px 10px 10px;
+	-webkit-box-shadow:
+		0 2px 6px rgba(0,0,0,0.5),
+		inset 0 1px rgba(255,255,255,0.3),
+		inset 0 10px rgba(255,255,255,0.2),
+		inset 0 10px 20px rgba(255,255,255,0.25),
+		inset 0 -15px 30px rgba(0,0,0,0.3);
+	-moz-box-shadow:
+		0 2px 6px rgba(0,0,0,0.5),
+		inset 0 1px rgba(255,255,255,0.3),
+		inset 0 10px rgba(255,255,255,0.2),
+		inset 0 10px 20px rgba(255,255,255,0.25),
+		inset 0 -15px 30px rgba(0,0,0,0.3);
+	box-shadow:
+		0 2px 6px rgba(0,0,0,0.5),
+		inset 0 1px rgba(255,255,255,0.3),
+		inset 0 10px rgba(255,255,255,0.2),
+		inset 0 10px 20px rgba(255,255,255,0.25),
+		inset 0 -15px 30px rgba(0,0,0,0.3);
+	background:rgba(0,0,0,0.25);
 }
