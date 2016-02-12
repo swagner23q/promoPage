@@ -129,10 +129,6 @@ body {
   top: 75px;
   left: 170px;
 }
-/*.thinkBubble:hover:after {
-  font-family: 'Fontdiner Swanky', cursive;
-  content: "Let's play fetch!";
-}*/
 h3 {
   border-bottom: 2px dotted black;
   padding-bottom: 20px;
@@ -144,7 +140,7 @@ h3 {
   position: absolute;
   text-align: center;
   top: 565px;
-  left: 150px;
+  left: 220px;
 	margin:10px;
 	width: 500px;
 	height: 355px;
@@ -182,7 +178,9 @@ h3 {
   border-radius: 20px;
   padding: 14px;
   box-shadow: 1px 1px 4px black;
-
+}
+.buyButton:hover {
+  cursor: pointer;
 }
 .buyButton:active {
   box-shadow: none;
@@ -201,10 +199,86 @@ footer {
   height: 200px;
 }
 table {
+  position: absolute;
+  top: 17px;
+  left: 260px;
+  width: 447px;
+  height: 165px;
   border: 2px ridge grey;
-  border-radius: 5px;
-  padding: 5px;
+  border-collapse: collapse;
+  border-radius: 10px;
 }
+th {
+  padding-top: 15px;
+}
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 td:nth-child(-n+3) {
   border-bottom: 1px solid grey;
+}
+td:nth-child(n+3) {
+  text-align: right;
+}
+td:nth-child(2) {
+  color: #25AAE1;
+}
+td:nth-child(2):hover {
+  color: #25AAE1;
+  text-shadow: 1px 1px 3px white;
+  cursor: pointer;
+}
+.contact {
+  position: absolute;
+  left: 800px;
+}
+.joinPack {
+  position: absolute;
+  left: 1050px;
+}
+button {
+  font-size: 18px;
+  font-family: 'Puritan', sans-serif;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: #25AAE1;
+  color: white;
+  padding: 10px;
+}
+input, textarea {
+  border: 2px inset grey;
+  width: 190px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+input:focus, textarea:focus {
+  background: #91daf7;
+}
+.soFooter {
+  font-size: 15px;
+  position: absolute;
+  height: 55px;
+  top: 200px;
+  width: 100%;
+  background-color: #838383;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+.copyright {
+  position: absolute;
+  top: 20px;
+  left: 350px;
+}
+.socialMedia {
+  position: absolute;
+  top: 10px;
+  left: 1100px;
+}
+#faInsta, #faPin, #faYou, #faTwit, #faFace {
+  color: #848383;
+  font-size: 27px;
+  padding-right: 15px;
 }
