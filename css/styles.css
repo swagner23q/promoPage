@@ -136,15 +136,11 @@ h3 {
 }
 .bubbleContent {
   text-shadow: 1px 1px 2px white;
-  padding: 5px;
+  padding: 15px;
   float: left;
   position: absolute;
   text-align: center;
-  top: 565px;
-  left: 220px;
 	margin:10px;
-	width: 500px;
-	height: 355px;
 	border:1px solid rgba(0,0,0,0.5);
 	border-radius:10px 10px 10px 10px;
 	-webkit-box-shadow:
@@ -167,6 +163,32 @@ h3 {
 		inset 0 -15px 30px rgba(0,0,0,0.3);
 	background:rgba(0,0,0,0.25);
 }
+.bubbleContent1 {
+  width: 500px;
+  height: 355px;
+  top: 565px;
+  left: 220px;
+}
+.bubbleContent2 {
+  width: 500px;
+  height: 355px;
+  top: 565px;
+  left: 775px;
+}
+.toyPics {
+  position: static;
+  box-shadow: 2px 2px 3px black;
+  padding: 2px;
+  width: 18%;
+  border-radius: 50px;
+  margin: 3px;
+}
+.toyPics:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .because {
   font-size: 20px;
   font-weight: bold;
