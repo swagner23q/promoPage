@@ -1,5 +1,5 @@
 ## Sara Wagner
-#### Pasta Page
+#### Promo Page
 
 ~Week One CSS Code Review~
 
