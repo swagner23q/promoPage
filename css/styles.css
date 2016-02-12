@@ -176,7 +176,7 @@ h3 {
   left: 775px;
 }
 .toyPics {
-  position: static;
+  float: left;
   box-shadow: 2px 2px 3px black;
   padding: 2px;
   width: 18%;
